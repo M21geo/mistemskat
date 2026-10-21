@@ -1,0 +1,17 @@
+[project]
+name = "mustamsakat"
+version = "1.0.0"
+description = "محفظة المستمسكات"
+requires-python = ">=3.10"
+dependencies = ["flet==0.28.3", "pillow"]
+
+[tool.flet]
+org = "iq.mustamsakat"          # غيّره لاسم حزمة خاص بك (مثلاً com.اسمك.mustamsakat)
+product = "محفظة المستمسكات"
+company = ""
+copyright = ""
+
+# صلاحيات التخزين (تفيد بأندرويد القديم، وبالجديد يبقى زر «اختيار مكان الحفظ»)
+[tool.flet.android.permission]
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.READ_EXTERNAL_STORAGE" = true
